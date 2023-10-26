@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!---Google foint 'Courgette' (Weight: 400) {font-family: 'Courgette', cursive;}--->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+	<!---Google font 'Playfair Display' (Weight: 400 to 900) {font-family: 'Playfair Display', serif;}--->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<!---Google font 'Open Sans' (Weight: 300 to 800) {font-family: 'Open Sans', sans-serif;}--->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<!----CSS Stylesheet---->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Library App</title>
+</head>
+<body>
+	<!---Page header--->
+  <header class="header">
+		<!---Page title & icon--->
+		<section class="logo-container">
+			<figure class="logo-fig">
+				<img src="icons/bookshelf-icon.png" alt="page logo">
+			</figure>
+			<h1 class="title">Bookshelf</h1>
+		</section>
+		<!---User and menu section--->
+		<section class="menu-container">
+			<section class="user-container">
+				<figure class="user-fig">
+					<img src="img/Avatar.png" alt="profile picture">
+				</figure>
+				<section class="user-section">
+					<p class="greeting">Hello there,</p>
+					<h2 class="username">Nickname (@username)</h2>
+				</section>
+			</section>
+			<nav class="navigation">
+				<ul class="btn-list">
+					<li><button id="new-book-btn" class="btn">New</button></li>
+					<li><button class="btn">Download</button></li>
+					<li><button class="btn">Share</button></li>
+				</ul>
+			</nav>
+		</section>
+		<section class="shadow-line" aria-hidden="true"></section>
+	</header>
+	<!---Main content--->
+	<main id="principal">
+		<section id="content">
+			<!---Book submitting form-->
+			<form id="new-book-form">
+				<section class="form-divs">
+					<label for="book-title">Title:</label>
+					<input type="text" id="book-title">
+				</section>
+				<section class="form-divs">
+					<label for="book-author">Author:</label>
+					<input type="text" id="book-author">
+				</section>
+				<section class="form-divs">
+					<label for="book-author">Pages:</label>
+					<input type="number" id="book-pages">
+				</section>
+				<section class="form-divs check-div">
+					<label for="read-book">Read:</label>
+					<input type="checkbox" id="read-book">
+				</section>
+				<section class="submit-section">
+					<input type="submit" id="submit-book-btn" value="Add Book">
+				</section>
+			</form>
+			<section id="my-library">
+
+			</section>
+		</section>
+	</main>
+
+	<!---Footer--->
+	<!-- <footer>
+		<p>Developed by <span><a href="https://github.com/MartinXCVI" target="_blank">MartinXCVI<figure><img src="icons/github.png" alt="github icon"></figure></a></span></p>
+		<p>Electronics icons created by <a href="https://www.flaticon.com/free-icons/electronics" title="electronics icons" target="_blank">Freepik - Flaticon</a></p>
+	</footer> -->
+</body>
+</html>
